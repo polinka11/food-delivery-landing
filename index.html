@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -98,7 +101,7 @@
                 <div class="offer__advantages-text">
                     Ми розробили спеціальне меню, де враховані всі нюанси правильного харчування, від балансу БЖВ до їх приготування і дроблення раціону.</div>
             </div>
-            <div class="offer__slider">
+            <div class="offer__slider swiper-container">
                 <div class="offer__slider-counter">
                     <div class="offer__slider-prev">
                         <img src="icons/left.svg" alt="prev">
@@ -110,19 +113,19 @@
                         <img src="icons/right.svg" alt="next">
                     </div>
                 </div>
-                <div class="offer__slider-wrapper">
+                <div class="swiper-wrapper offer__slider-wrapper ">
                     <div class="offer__slide">
                         <img src="img/slider/pepper.jpg" alt="pepper">
                     </div>
-                    <!-- <div class="offer__slide">
+                     <div class=" swiper-slide offer__slide">
                         <img src="img/slider/food-12.jpg" alt="food">
                     </div>
-                    <div class="offer__slide">
+                    <div class="swiper-slide offer__slide">
                         <img src="img/slider/olive-oil.jpg" alt="oil">
                     </div>
-                    <div class="offer__slide">
+                    <div class="swiper-slide offer__slide">
                         <img src="img/slider/paprika.jpg" alt="paprika">
-                    </div> -->
+                    </div> 
                 </div>
             </div>
         </div>
@@ -298,6 +301,8 @@
             </div>
         </div>
     </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
