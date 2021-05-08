@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
     <header class="header">
@@ -45,13 +45,13 @@
                         Меню "Фітнес" - це новий підхід до приготування страв: більше свіжих овочів і фруктів. Для людей, які цікавляться спортом; активних і здорових. Це абсолютно новий продукт з оптимальною ціною і високою якістю!
                     </div>
                 </div>
-                 <div class="tabcontent hide">
+                <div class="tabcontent hide">
                     <img src="img/tabs/elite.jpg" alt="elite">
                     <div class="tabcontent__descr">
                         Меню "Преміум" - ми використовуємо не тільки гарний дизайн упаковки, але і якісне виконання страв. Червона риба, морепродукти, фрукти - ресторанне меню без походу в ресторан!                                     
                     </div>
-                </div> 
-                 <div class="tabcontent hide">
+                </div>
+                <div class="tabcontent hide">
                     <img src="img/tabs/post.jpg" alt="post">
                     <div class="tabcontent__descr">
                         Наше спеціальне "Пісне меню" - це ретельний підбір інгредієнтів: повна відсутність продуктів тваринного походження. Повна гармонія з собою і природою в кожному елементі! Все буде Ням!
@@ -62,7 +62,7 @@
                     <div class="tabcontent__descr">
                         Меню "Збалансоване" - це відповідність вашого раціону всім науковим рекомендаціям. Ми ретельно прораховуємо вашу потребу в К/Б/Ж/В і створюємо кращі страви для вас.
                     </div>
-                </div> -->
+                </div> 
                 <div class="tabheader">
                     <h3>Виберіть стиль харчування</h3>
                     <div class="tabheader__items">
@@ -101,7 +101,7 @@
                 <div class="offer__advantages-text">
                     Ми розробили спеціальне меню, де враховані всі нюанси правильного харчування, від балансу БЖВ до їх приготування і дроблення раціону.</div>
             </div>
-            <div class="offer__slider swiper-container">
+            <div class="swiper-container offer__slider">
                 <div class="offer__slider-counter">
                     <div class="offer__slider-prev">
                         <img src="icons/left.svg" alt="prev">
@@ -113,19 +113,28 @@
                         <img src="icons/right.svg" alt="next">
                     </div>
                 </div>
-                <div class="swiper-wrapper offer__slider-wrapper ">
-                    <div class="offer__slide">
-                        <img src="img/slider/pepper.jpg" alt="pepper">
+                <div class="swiper-wrapper offer__slider-wrapper">
+                    <div class="offer__slider-inner">
+                        <div class="swiper-slide offer__slide ">
+                            <img src="img/slider/pepper.jpg" alt="pepper">
+                        </div>
+                         <div class="swiper-slide offer__slide">
+                            <img src="img/slider/food-12.jpg" alt="food">
+                        </div>
+                        <div class="swiper-slide offer__slide">
+                            <img src="img/slider/olive-oil.jpg" alt="oil">
+                        </div>
+                        <div class="swiper-slide offer__slide">
+                            <img src="img/slider/paprika.jpg" alt="paprika">
+                        </div> 
+                        <div class="swiper-slide offer__slide">
+                            <img src="img/slider/paprika.jpg" alt="paprika">
+                        </div> 
+                        <div class="swiper-slide offer__slide">
+                            <img src="img/slider/paprika.jpg" alt="paprika">
+                        </div> 
                     </div>
-                     <div class=" swiper-slide offer__slide">
-                        <img src="img/slider/food-12.jpg" alt="food">
-                    </div>
-                    <div class="swiper-slide offer__slide">
-                        <img src="img/slider/olive-oil.jpg" alt="oil">
-                    </div>
-                    <div class="swiper-slide offer__slide">
-                        <img src="img/slider/paprika.jpg" alt="paprika">
-                    </div> 
+                  
                 </div>
             </div>
         </div>
@@ -142,27 +151,27 @@
                     Ваша стать
                 </div>
                 <div class="calculating__choose" id="gender">
-                    <div class="calculating__choose-item calculating__choose-item_active">Жінка</div>
-                    <div class="calculating__choose-item">Чоловік</div>
+                    <div id='female' class="calculating__choose-item calculating__choose-item_active">Жінка</div>
+                    <div id='male' class="calculating__choose-item">Чоловік</div>
                 </div>
 
                 <div class="calculating__subtitle">
                     Ваша характеристика
                 </div>
                 <div class="calculating__choose calculating__choose_medium">
-                    <input type="text" id="height" placeholder="Введіть ріст" class="calculating__choose-item">
-                    <input type="text" id="weight" placeholder="Введіть вагу"  class="calculating__choose-item">
-                    <input type="text" id="age" placeholder="Введіть вік" class="calculating__choose-item">
+                    <input type="number" id="height" placeholder="Введіть ріст" class="calculating__choose-item">
+                    <input type="number" id="weight" placeholder="Введіть вагу"  class="calculating__choose-item">
+                    <input type="number" id="age" placeholder="Введіть вік" class="calculating__choose-item">
                 </div>
 
                 <div class="calculating__subtitle">
                     Виберіть вашу фізична активність
                 </div>
                 <div class="calculating__choose calculating__choose_big">
-                    <div id="low" class="calculating__choose-item">Низька активність </div>
-                    <div id="small"  class="calculating__choose-item calculating__choose-item_active">Невисока активність</div>
-                    <div id="medium" class="calculating__choose-item">Помірна активність</div>
-                    <div id="high" class="calculating__choose-item">Висока активність</div>
+                    <div id="low" data-ratio ='1.2' class="calculating__choose-item">Низька активність </div>
+                    <div id="small" data-ratio ='1.375'  class="calculating__choose-item calculating__choose-item_active">Невисока активність</div>
+                    <div id="medium" data-ratio ='1.55' class="calculating__choose-item">Помірна активність</div>
+                    <div id="high" data-ratio ='1.725' class="calculating__choose-item">Висока активність</div>
                 </div>
 
                 <div class="calculating__divider"></div>
@@ -301,8 +310,8 @@
             </div>
         </div>
     </div>
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
     <script src="js/script.js"></script>
 </body>
 </html>
