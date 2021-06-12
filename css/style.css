@@ -549,6 +549,11 @@ a {
    padding: 0 20px;
    outline: 0
 }
+.order__input.error, .modal__input.error {
+   
+   box-shadow: 0 4px 15px rgba(251, 4, 4, 0.924);
+   
+}
 
 .promotion {
    padding: 70px 0 240px 0;
